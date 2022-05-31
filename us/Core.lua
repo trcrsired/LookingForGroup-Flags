@@ -1,4 +1,4 @@
-local LookingForGroup_Options = LibStub("AceAddon-3.0"):GetAddon("LookingForGroup_Options")
+local LFG = LibStub("AceAddon-3.0"):GetAddon("LookingForGroup")
 local languages =
 {
 "brazilian",
@@ -41,4 +41,4 @@ local realms =
 ["Illidan"] = 2
 }
 
-LookingForGroup_Options.flags={languages,flags,realms}
+LFG.flags={languages,flags,realms}
