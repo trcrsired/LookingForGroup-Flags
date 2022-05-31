@@ -41,13 +41,4 @@ local realms =
 ["Illidan"] = 2
 }
 
-LookingForGroup_Options.Register("lfgscoresbrief",nil,function(name)
-	local realm = name:match("-(.*)$")
-	if realm == nil then
-		realm = GetNormalizedRealmName()
-	end
-	local language = realms[realm]
-	if language then
-		return flags[language]
-	end
-end)
+LookingForGroup_Options.flags={languages,flags,realms}
